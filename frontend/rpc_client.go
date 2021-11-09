@@ -8,8 +8,8 @@ import (
 	"net"
 
 	"github.com/btcsuite/btcd/rpcclient"
+	"github.com/meshbits/lightwalletd/common"
 	"github.com/pkg/errors"
-	"github.com/zcash/lightwalletd/common"
 	ini "gopkg.in/ini.v1"
 )
 

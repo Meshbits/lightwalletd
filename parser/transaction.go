@@ -9,9 +9,9 @@ import (
 	"crypto/sha256"
 	"fmt"
 
+	"github.com/meshbits/lightwalletd/parser/internal/bytestring"
+	"github.com/meshbits/lightwalletd/walletrpc"
 	"github.com/pkg/errors"
-	"github.com/zcash/lightwalletd/parser/internal/bytestring"
-	"github.com/zcash/lightwalletd/walletrpc"
 )
 
 type rawTransaction struct {

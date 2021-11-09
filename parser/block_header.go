@@ -11,8 +11,8 @@ import (
 	"encoding/binary"
 	"math/big"
 
+	"github.com/meshbits/lightwalletd/parser/internal/bytestring"
 	"github.com/pkg/errors"
-	"github.com/zcash/lightwalletd/parser/internal/bytestring"
 )
 
 const (

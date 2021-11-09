@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/meshbits/lightwalletd/parser"
+	"github.com/meshbits/lightwalletd/walletrpc"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	"github.com/zcash/lightwalletd/parser"
-	"github.com/zcash/lightwalletd/walletrpc"
 )
 
 // 'make build' will overwrite this string with the output of git-describe (tag)

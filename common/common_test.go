@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/meshbits/lightwalletd/walletrpc"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	"github.com/zcash/lightwalletd/walletrpc"
 )
 
 // ------------------------------------------ Setup

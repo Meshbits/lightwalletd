@@ -557,8 +557,13 @@ func (tx *Transaction) ParseFromSlice(data []byte) ([]byte, error) {
 	// 	return nil, errors.New("fOverwinter flag must be set")
 	// }
 	tx.version = header & 0x7FFFFFFF
-	if tx.version < 4 {
-		return nil, errors.New(fmt.Sprintf("version number %d must be greater or equal to 4", tx.version))
+	// if tx.version < 4 {
+	// 	return nil, errors.New(fmt.Sprintf("version number %d must be greater or equal to 4", tx.version))
+	// }
+	if tx.version >= 3 {
+		if !s.ReadUint32(&tx.nVersionGroupID) {
+			return nil, errors.New("could not read nVersionGroupId")
+		}
 	}
 
 	if !s.ReadUint32(&tx.nVersionGroupID) {

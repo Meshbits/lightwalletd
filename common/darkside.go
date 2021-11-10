@@ -376,7 +376,7 @@ func darksideRawRequest(method string, params []json.RawMessage) (json.RawMessag
 		blockchaininfo := &ZcashdRpcReplyGetblockchaininfo{
 			Chain: state.chainName,
 			Upgrades: map[string]Upgradeinfo{
-				"7361707a": {ActivationHeight: state.startHeight},
+				"76b809bb": {ActivationHeight: state.startHeight},
 			},
 			Blocks:    state.latestHeight,
 			Consensus: ConsensusInfo{state.branchID, state.branchID},
